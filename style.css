@@ -7,7 +7,7 @@ body {
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
     body {
-        background-color: #ae95c5;
+        background-color: #e1c4fc;
     }
     h1 {
         font-size: 1.5em;
@@ -114,7 +114,7 @@ blockquote {
 .absoluto {
     position: absolute;
     top: 25px;
-    left: 800px;
+    left: 55%;
     background-color: #ae95c5;
     padding: 10px;
 }
