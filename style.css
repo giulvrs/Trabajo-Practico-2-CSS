@@ -1,4 +1,29 @@
+/* Estilos generales */
+body {
+    background-color: #fabeed;
+    font-family: Arial, sans-serif;
+}
 
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        background-color: #ffd1f3;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .seccion {
+        width: 95%;
+        padding: 10px;
+    }
+}
+
+section{
+    background-color: #fff5fc;
+    line-height: 1.2;
+    padding: 20px;
+    margin: 10px;
+}
 /* Estilos para el encabezado 4.1 */
 h1 {
     font-size: 30px;
@@ -45,7 +70,7 @@ blockquote {
     padding-left: 10px;
     margin: 20px 0;
     color: #000000;
-    background-color: #ffebf5; 
+    background-color: #c3a9e0; 
     border-radius: 10px; 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
     font-style: bold;
@@ -80,7 +105,7 @@ blockquote {
     position: relative;
     top: 20px;
     left: 20px;
-    background-color: #e0f7fa;
+    background-color: #795b96;
     padding: 20px;
     margin-bottom: 50px;
 }
@@ -88,8 +113,60 @@ blockquote {
 /* Estilos para la caja absoluta */
 .absoluto {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: #ffcc80;
+    top: 25px;
+    left: 800px;
+    background-color: #ae95c5;
     padding: 10px;
+}
+/* Estilos para el contenedor de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Estilos para los elementos de la cuadrícula */
+.grid-item {
+    background-color: #db6fa2;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+
+/* Estilos para la animación de color */
+.animacion {
+    width: 100px;
+    height: 100px;
+    background-color: #795b96;
+    transition: background-color 0.5s ease;
+}
+
+.animacion:hover {
+    background-color: #f18ddc;
+}
+
+/* Estilos para la animación de movimiento */
+.mover {
+    width: 100px;
+    height: 100px;
+    background-color: #d4a9fc;
+    position: relative;
+    animation: mover 2s infinite;
+    border-radius: 50%;
+
+
+}
+
+@keyframes mover {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 400px;
+    }
+    100% {
+        left: 0;
+    }
 }
